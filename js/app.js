@@ -27,14 +27,16 @@ angular.module('starter', ['ionic','ngCordova'])
       console.warn("called");
       //alert("call");
     if(navigator.onLine){//$scope.isOnline==true){
-      console.warn("mob is online"+$cordovaNetwork);
+      console.warn("mob is online");
       alert("online");
+      $scope.msg = "online device";
     }else{
-      console.warn("mob is offline"+$cordovaNetwork);
+      $scope.msg = "offline device";
+      console.warn("mob is offline");
       alert("offline");
     }
   };
-    document.addEventListener("deviceready", function () {
+    /*document.addEventListener("deviceready", function () {
 
         $scope.network = $cordovaNetwork.getNetwork();
         $scope.isOnline = $cordovaNetwork.isOnline();
@@ -58,5 +60,5 @@ angular.module('starter', ['ionic','ngCordova'])
             $scope.msg = "offline device";
             $scope.$apply();
         })
-  }, false);
+  }, false);*/
 })

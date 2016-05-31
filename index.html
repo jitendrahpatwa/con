@@ -31,14 +31,15 @@
 
 
         <div class="card">
-                <div class="item item-text-wrap">
+                <div class="item item-text-wrap"><br><br>
+            <button ng-click="call()">Click here</button>
                     <h1>Network is: {{msg}}</h1>
                 </div>
             </div>
 
 
         <ion-content padding="true">
-            <div class="card">
+            <!-- <div class="card">
                 <div class="item item-text-wrap">
                     <h1>Network: {{network}}</h1>
                 </div>
@@ -51,7 +52,7 @@
                         <h1 ng-show="! isOnline">I'm offline</h1>
                     </ion-toggle>
                 </div>
-            </div>
+            </div> -->
             <button ng-click="call()">Click here</button>
         </ion-content>
     </ion-pane>
